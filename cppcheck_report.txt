@@ -1,0 +1,290 @@
+binding/php5/friso.c:349:31: error: There is an unknown macro here somewhere. Configuration is required. If ZEND_NUM_ARGS is a macro then please configure it. [unknownMacro]
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ls", &type, &word, &wlen) == FAILURE) {
+                              ^
+binding/php7/friso.c:384:31: error: There is an unknown macro here somewhere. Configuration is required. If ZEND_NUM_ARGS is a macro then please configure it. [unknownMacro]
+    if (zend_parse_parameters(ZEND_NUM_ARGS() TSRMLS_CC, "ls", &type, &word, &wlen) == FAILURE) {
+                              ^
+src/friso.c:161:21: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                    fprintf(stderr, " with a length of {%d} at function friso.c#friso_init_from_ifile", flen + __hit__);
+                    ^
+src/friso.c:839:20: style: The scope of the variable 'tmp' can be reduced. [variableScope]
+    float var = 0, tmp = 0;            //snapshot
+                   ^
+src/friso.c:862:17: style: The scope of the variable 'e' can be reduced. [variableScope]
+    lex_entry_t e;
+                ^
+src/friso.c:1204:15: style: The scope of the variable 'j' can be reduced. [variableScope]
+    uint_t i, j, len;
+              ^
+src/friso.c:1205:13: style: The scope of the variable '_word' can be reduced. [variableScope]
+    fstring _word;
+            ^
+src/friso.c:1237:13: style: The scope of the variable '_word' can be reduced. [variableScope]
+    fstring _word;
+            ^
+src/friso.c:1238:17: style: The scope of the variable 'e' can be reduced. [variableScope]
+    lex_entry_t e;
+                ^
+src/friso.c:1277:9: style: The scope of the variable '_ctype' can be reduced. [variableScope]
+    int _ctype, _TYPE = get_enchar_type(str[0]);
+        ^
+src/friso.c:839:24: style: Variable 'tmp' is assigned a value that is never used. [unreadVariable]
+    float var = 0, tmp = 0;            //snapshot
+                       ^
+src/friso.c:1327:15: style: Variable 'start' is assigned a value that is never used. [unreadVariable]
+        start = j - task->sbuf->length;
+              ^
+src/friso_GBK.c:135:9: style: The scope of the variable 'c1' can be reduced. [variableScope]
+    int c1 = 0;
+        ^
+src/friso_GBK.c:154:9: style: The scope of the variable 'c1' can be reduced. [variableScope]
+    int c1 = 0;
+        ^
+src/friso_GBK.c:135:12: style: Variable 'c1' is assigned a value that is never used. [unreadVariable]
+    int c1 = 0;
+           ^
+src/friso_GBK.c:154:12: style: Variable 'c1' is assigned a value that is never used. [unreadVariable]
+    int c1 = 0;
+           ^
+src/friso_UTF8.c:129:19: style: Condition 'u>=0x00000080' is always true [knownConditionTrueFalse]
+    } else if ( u >= 0x00000080 && u <= 0x000007FF ) {
+                  ^
+src/friso_UTF8.c:124:12: note: Assuming that condition 'u<=0x0000007F' is not redundant
+    if ( u <= 0x0000007F ) {
+           ^
+src/friso_UTF8.c:129:19: note: Condition 'u>=0x00000080' is always true
+    } else if ( u >= 0x00000080 && u <= 0x000007FF ) {
+                  ^
+src/friso_UTF8.c:233:21: style: Same expression on both sides of '||' because 'k' and 'j' represent the same value. [knownConditionTrueFalse]
+    return ( c || j || k );
+                    ^
+src/friso_UTF8.c:210:27: note: 'k' is assigned value '0' here.
+    int c = 0, j = 0, k = 0;
+                          ^
+src/friso_UTF8.c:210:20: note: 'j' is assigned value '0' here.
+    int c = 0, j = 0, k = 0;
+                   ^
+src/friso_UTF8.c:233:21: note: Same expression on both sides of '||' because 'k' and 'j' represent the same value.
+    return ( c || j || k );
+                    ^
+src/friso_UTF8.c:316:9: style: The scope of the variable 'bytes' can be reduced. [variableScope]
+    int bytes, u;
+        ^
+src/friso_array.c:110:21: style: The scope of the variable 't' can be reduced. [variableScope]
+    register uint_t t;
+                    ^
+src/friso_array.c:160:21: style: The scope of the variable 't' can be reduced. [variableScope]
+    register uint_t t;
+                    ^
+src/friso_lexicon.c:42:21: style: The scope of the variable 'i' can be reduced. [variableScope]
+    register uint_t i;
+                    ^
+src/friso_lexicon.c:43:19: style: The scope of the variable 'syn' can be reduced. [variableScope]
+    friso_array_t syn;
+                  ^
+src/friso_lexicon.c:112:21: style: The scope of the variable 'i' can be reduced. [variableScope]
+    register uint_t i;
+                    ^
+src/friso_lexicon.c:113:19: style: The scope of the variable 'syn' can be reduced. [variableScope]
+    friso_array_t syn;
+                  ^
+src/friso_lexicon.c:285:10: style: The scope of the variable '__char' can be reduced. [variableScope]
+    char __char[1024], _buffer[512];
+         ^
+src/friso_lexicon.c:285:24: style: The scope of the variable '_buffer' can be reduced. [variableScope]
+    char __char[1024], _buffer[512];
+                       ^
+src/friso_lexicon.c:286:13: style: The scope of the variable '_line' can be reduced. [variableScope]
+    fstring _line;
+            ^
+src/friso_lexicon.c:289:13: style: The scope of the variable '_word' can be reduced. [variableScope]
+    fstring _word;
+            ^
+src/friso_lexicon.c:290:10: style: The scope of the variable '_sbuffer' can be reduced. [variableScope]
+    char _sbuffer[512];
+         ^
+src/friso_lexicon.c:291:13: style: The scope of the variable '_syn' can be reduced. [variableScope]
+    fstring _syn;
+            ^
+src/friso_lexicon.c:292:19: style: The scope of the variable 'sywords' can be reduced. [variableScope]
+    friso_array_t sywords;
+                  ^
+src/friso_lexicon.c:293:12: style: The scope of the variable '_fre' can be reduced. [variableScope]
+    uint_t _fre;
+           ^
+src/friso_lexicon.c:438:10: style: The scope of the variable '__chars__' can be reduced. [variableScope]
+    char __chars__[1024], __key__[30], *__line__;
+         ^
+src/friso_lexicon.c:438:27: style: The scope of the variable '__key__' can be reduced. [variableScope]
+    char __chars__[1024], __key__[30], *__line__;
+                          ^
+src/friso_lexicon.c:439:12: style: The scope of the variable '__length__' can be reduced. [variableScope]
+    uint_t __length__, i, t;
+           ^
+src/friso_lexicon.c:439:24: style: The scope of the variable 'i' can be reduced. [variableScope]
+    uint_t __length__, i, t;
+                       ^
+src/friso_lexicon.c:439:27: style: The scope of the variable 't' can be reduced. [variableScope]
+    uint_t __length__, i, t;
+                          ^
+src/friso_link.c:101:21: style: The scope of the variable 't' can be reduced. [variableScope]
+    register uint_t t;
+                    ^
+src/friso_link.c:103:14: style: Unsigned expression 'idx' can't be negative so it is unnecessary to test it. [unsignedPositive]
+    if ( idx >= 0 && idx < link->size )
+             ^
+src/friso_string.c:285:15: style: The scope of the variable '_ok' can be reduced. [variableScope]
+    uint_t i, _ok;
+              ^
+src/tst-array.c:29:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-array.c:29:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-array.c:31:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("after tirm length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-array.c:31:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("after tirm length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-array.c:40:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-array.c:40:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, allocations=%d\n", array->length, array->allocs );
+    ^
+src/tst-hash.c:11:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("info:length=%d, size=%d, facotr=%f, threshold=%d\n", _hash->length, \
+    ^
+src/tst-hash.c:11:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("info:length=%d, size=%d, facotr=%f, threshold=%d\n", _hash->length, \
+    ^
+src/tst-hash.c:11:5: warning: %d in format string (no. 4) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("info:length=%d, size=%d, facotr=%f, threshold=%d\n", _hash->length, \
+    ^
+src/tst-lex.c:65:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf(
+    ^
+src/tst-lex.c:93:17: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf(
+                ^
+src/tst-lex.c:73:13: warning: scanf() without field width limits can crash with huge input data. [invalidscanf]
+        if (scanf("%s", _line) != 1) {
+            ^
+src/tst-link.c:27:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("size=%d\n", link->size );
+    ^
+src/tst-link.c:34:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("size=%d\n", link->size );
+    ^
+src/tst-link.c:41:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("size=%d\n", link->size );
+    ^
+src/tst-link.c:45:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("size=%d, head->next->value=%s\n", link->size, ( fstring ) link->head->next->value );
+    ^
+src/tst-split.c:17:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("sst->idx=%d\n", split->idx);
+    ^
+src/tst-split.c:18:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("sst->srcLen=%d\n", split->srcLen);
+    ^
+src/tst-split.c:19:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("sst->delLen=%d\n", split->delLen);
+    ^
+src/tst-string.c:37:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, buffer=%s\n", sb->length, sb->buffer );
+    ^
+src/tst-string.c:39:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, buffer=%s\n", sb->length, sb->buffer );
+    ^
+src/tst-string.c:41:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, buffer=%s\n", sb->length, sb->buffer );
+    ^
+src/tst-string.c:44:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("length=%d, buffer=%s\n", sb->length, string_buffer_devote( sb ) );
+    ^
+binding/ocaml/stub.c:131:0: style: The function 'friso_init_from_ifile_stub' is never used. [unusedFunction]
+
+^
+src/friso_ctype.c:132:0: style: The function 'friso_letter_number' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:115:0: style: The function 'friso_new_config_stub' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:107:0: style: The function 'friso_new_stub' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:123:0: style: The function 'friso_new_task_stub' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:143:0: style: The function 'friso_next_token_stub' is never used. [unusedFunction]
+
+^
+src/friso_ctype.c:139:0: style: The function 'friso_other_number' is never used. [unusedFunction]
+
+^
+src/friso_lexicon.c:538:0: style: The function 'friso_spec_dic_size' is never used. [unusedFunction]
+
+^
+src/friso_GBK.c:214:0: style: The function 'gbk_letter_number' is never used. [unusedFunction]
+
+^
+src/friso_GBK.c:104:0: style: The function 'gbk_lowercase_letter' is never used. [unusedFunction]
+
+^
+src/friso_GBK.c:226:0: style: The function 'gbk_other_number' is never used. [unusedFunction]
+
+^
+src/friso_lexicon.c:254:0: style: The function 'indexOf' is never used. [unusedFunction]
+
+^
+src/friso_link.c:187:0: style: The function 'link_list_get' is never used. [unusedFunction]
+
+^
+src/friso_link.c:173:0: style: The function 'link_list_insert_before' is never used. [unusedFunction]
+
+^
+src/friso_link.c:225:0: style: The function 'link_list_remove' is never used. [unusedFunction]
+
+^
+src/friso_link.c:262:0: style: The function 'link_list_remove_last' is never used. [unusedFunction]
+
+^
+src/friso_link.c:244:0: style: The function 'link_list_remove_node' is never used. [unusedFunction]
+
+^
+src/friso_link.c:204:0: style: The function 'link_list_set' is never used. [unusedFunction]
+
+^
+src/friso_UTF8.c:50:0: style: The function 'print_char_binary' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:137:0: style: The function 'set_text_stub' is never used. [unusedFunction]
+
+^
+src/friso_string.c:134:0: style: The function 'string_buffer_insert' is never used. [unusedFunction]
+
+^
+src/friso_string.c:260:0: style: The function 'string_split_set_delimiter' is never used. [unusedFunction]
+
+^
+src/friso_string.c:252:0: style: The function 'string_split_set_source' is never used. [unusedFunction]
+
+^
+binding/ocaml/stub.c:99:0: style: The function 'to_c_string_stub' is never used. [unusedFunction]
+
+^
+src/friso_UTF8.c:422:0: style: The function 'utf8_letter_number' is never used. [unusedFunction]
+
+^
+src/friso_UTF8.c:273:0: style: The function 'utf8_lowercase_letter' is never used. [unusedFunction]
+
+^
+src/friso_UTF8.c:433:0: style: The function 'utf8_other_number' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
